@@ -1,0 +1,3 @@
+Thank you for installing Canvas Functions for Sublimetext.
+The functions should automatically show up in your autocomplete list when you start typing and press ctrl+Enter. 
+Have fun and happy coding.
