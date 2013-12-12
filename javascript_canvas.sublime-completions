@@ -1,0 +1,86 @@
+{
+  "scope": "source.js",
+
+    //CREATED OFF THE DATA FOUND AT http://simon.html5.org/dump/html5-canvas-cheat-sheet.html
+
+  "completions":
+  [
+  //Canvas element
+      //Methods
+    {"trigger": "toDataURL", "contents": "toDataURL(${1:type}, ${2:more args});"},
+    {"trigger": "getContext", "contents": "getContext(${1:contextID});"},
+  //2D Context
+      //Methods
+  	{"trigger": "save", "contents": "save();"},
+  	{"trigger": "restore", "contents": "restore();"},
+  //Transformations
+      //Methods
+  	{"trigger": "scale", "contents": "scale(${1:x}, ${2:y});"},
+  	{"trigger": "rotate", "contents": "rotate(${1:angle});"},
+  	{"trigger": "translate", "contents": "translate(${1:x}, ${2:y});"},
+  	{"trigger": "transform", "contents": "transform(${1:m11}, ${2:m12}, ${3:m21}, ${4:m22}, ${5:dx}, ${6:dy});"},
+  	{"trigger": "setTransform", "contents": "setTransform(${1:m11}, ${2:m12}, ${3:m21}, ${4:m22}, ${5:dx}, ${6:dy});"},
+  //Image drawing
+      //Methods
+    {"trigger": "drawImage", "contents": "drawImage(${1:image}, ${2:dx}, ${3:dy});"},
+    {"trigger": "drawImage", "contents": "drawImage(${1:image}, ${2:sx}, ${3:sy}, ${4:sw}, ${5:sh}, ${6:dx}, ${7:dy}, ${8:dw}, ${9:dh});"},
+  //Compositing
+      //Attributes
+    {"trigger": "globalAlpha", "contents": "globalAlpha = ${1:float};"},
+    {"trigger": "globalCompositeOperation", "contents": "globalCompositeOperation = '${1:string}';"},
+  //Line styles
+      //Attributes
+    {"trigger": "lineWidth", "contents": "lineWidth = ${1:value};"},
+    {"trigger": "lineCap", "contents": "lineCap = '${1:string}';"},
+    {"trigger": "lineJoin", "contents": "lineJoin = '${1:string}';"},
+    {"trigger": "miterLimit", "contents": "miterLimit = ${1:value};"},
+  //Colors, styles and shadows
+      //Attributes
+  	{"trigger": "strokeStyle", "contents": "strokeStyle = 'rgb(${1:r}, ${2:g}, ${3:b})';"},
+  	{"trigger": "fillStyle", "contents": "fillStyle = 'rgb(${1:r}, ${2:g}, ${3:b})';"},
+  	{"trigger": "shadowOffsetX", "contents": "shadowOffsetX = ${1:value};"},
+  	{"trigger": "shadowOffsetY", "contents": "shadowOffsetY = ${1:value};"},
+  	{"trigger": "shadowBlur", "contents": "shadowBlur = ${1:value};"},
+  	{"trigger": "shadowColor", "contents": "shadowColor = '${1:string}';"},
+      //Methods
+  	{"trigger": "createLinearGradient", "contents": "createLinearGradient(${1:x0}, ${2:y0}, ${3:x1}, ${4:y1});"},
+  	{"trigger": "createRadialGradien", "contents": "createRadialGradien(${1:x0}, ${2:y0}, ${3:x1}, ${4:y1}, ${5:r1});"},
+  	{"trigger": "createPattern", "contents": "createPattern(${1:image}, '${2:repetition}');"},
+      //CanvasGradient interface
+  	{"trigger": "addColorStop", "contents": "addColorStop(${1:offset}, '${2:color}');"},
+  //Paths
+      //Methods
+    {"trigger": "beginPath", "contents": "beginPath();"},
+    {"trigger": "closePath", "contents": "closePath();"},
+    {"trigger": "fill", "contents": "fill();"},
+    {"trigger": "stroke", "contents": "stroke();"},
+    {"trigger": "clip", "contents": "clip();"},
+    {"trigger": "moveTo", "contents": "moveTo(${1:x}, ${2:y});"},
+    {"trigger": "lineTo", "contents": "lineTo(${1:x}, ${2:y});"},
+    {"trigger": "quadraticCurveTo", "contents": "quadraticCurveTo(${1:cpx}, ${2:cpy}, ${3:x}, ${4:y});"},
+    {"trigger": "bezierCurveTo", "contents": "bezierCurveTo(${1:cp1x}, ${2:cp1y}, ${3:cp2x}, ${4:cp2y}, ${5:x}, ${6:y});"},
+    {"trigger": "arcTo", "contents": "arcTo(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:radius});"},
+    {"trigger": "arc", "contents": "arc(${1:x}, ${2:y}, ${3:radius}, ${4:startAngle}, ${5:endAngle}, ${6:anticlockwise?});"},
+    {"trigger": "rect", "contents": "rect(${1:x}, ${2:y}, ${3:width}, ${4:height});"},
+    {"trigger": "isPointInPath", "contents": "isPointInPath(${1:x}, ${2:y});"},
+  //Text
+      //Attributes
+    {"trigger": "font", "contents": "font = '${1:style (normal)} ${2:size (Xpt)} ${3:font-face}';"},
+    {"trigger": "textAlign", "contents": "textAlign = '${1:string}';"},
+    {"trigger": "textBaseline", "contents": "textBaseline = '${1:string}';"},
+      //Methods
+    {"trigger": "fillText", "contents": "fillText('${1:string text}', ${2:x}, ${3:y});"},
+    {"trigger": "strokeText", "contents": "strokeText('${1:string text}', ${2:x}, ${3:y});"},
+    {"trigger": "measureText", "contents": "measureText('${1:string text}');"},
+  //Rectangles
+      //Methods
+    {"trigger": "clearRect", "contents": "clearRect(${1:x}, ${2:y}, ${3:width}, ${4:height});"},
+    {"trigger": "fillRect", "contents": "fillRect(${1:x}, ${2:y}, ${3:width}, ${4:height});"},
+    {"trigger": "strokeRect", "contents": "strokeRect(${1:x}, ${2:y}, ${3:width}, ${4:height});"},
+  //Pixel manipulation
+      //Methods
+    {"trigger": "createImageData", "contents": "createImagedata(${1:sw}, ${2:sh});"},
+    {"trigger": "getImageData", "contents": "getImageData(${1:sx}, ${2:sy}, ${3:sw}, ${4:sh});"},
+    {"trigger": "putImageData", "contents": "putImageData(${1:imagedata}, ${2:sw}, ${3:sh});"}
+  ]
+}
